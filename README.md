@@ -19,6 +19,12 @@
 1. Install git, making sure it's available from the Command Prompt/added to the PATH
 2. [Fix the weird terminal error](http://stackoverflow.com/questions/7949956/why-does-git-diff-on-windows-warn-that-the-terminal-is-not-fully-functional) on `git diff`
 
+### ssh
+
+Just make sure `ssh` from the git install is added to the PATH, just like `git` is!
+
+> NOTE: Once Microsoft finishes their [SSH implementation](https://github.com/PowerShell/Win32-OpenSSH), move to that
+
 ### todo
 
 - SSH
