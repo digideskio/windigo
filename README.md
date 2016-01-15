@@ -25,12 +25,13 @@ Just make sure `ssh` from the git install is added to the PATH, just like `git` 
 
 > NOTE: Once Microsoft finishes their [SSH implementation](https://github.com/PowerShell/Win32-OpenSSH), move to that
 
+### vagrant
+
+1. Install vagrant
+2. (optional) Use VMWare for vagrant boxes
+3. (optional) Use nfs for vagrant boxes; may require [a plugin for Windows](https://github.com/winnfsd/vagrant-winnfsd)
+
 ### todo
 
-- SSH
-- Git
-- Powershell environment/console
 - Crucial Unix commands
 - Powershell aliases
-- Powershell themes
-- Vagrant (or Docker?) and necessary Windows plugins
