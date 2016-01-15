@@ -9,6 +9,7 @@
 3. Install [PsGet](http://psget.net/)
 4. Install [posh-git](https://github.com/dahlbyk/posh-git)
 5. Install [z](https://github.com/vincpa/z)
+6. Install [PSColor](https://github.com/Davlind/PSColor) or [PSColors](https://github.com/ecsousa/PSColors)
 6. TODO: Add in a ton of handy Powershell aliases
 
 > NOTE: Don't forget to `Import-Module` specific PS modules in `$PROFILE` where needed
