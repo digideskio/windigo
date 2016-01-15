@@ -30,6 +30,7 @@ Just make sure `ssh` from the git install is added to the PATH, just like `git` 
 1. Install vagrant
 2. (optional) Use VMWare for vagrant boxes
 3. (optional) Use nfs for vagrant boxes; may require [a plugin for Windows](https://github.com/winnfsd/vagrant-winnfsd)
+4. TODO: Add a vagrant box configured for Windows usage with Node/Ruby tools and bash aliases, etc.
 
 ### todo
 
