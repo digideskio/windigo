@@ -4,6 +4,8 @@
 
 > NOTE: Ensure you have the newest Powershell installed!
 
+> NOTE: Don't forget to change the execution policy of PS scripts by opening Powershell as Administrator and running `Set-ExecutionPolicy RemoteSigned`
+
 1. Install [ConEmu](https://github.com/Maximus5/ConEmu)
 2. (optional) Install some [ConEmu themes](https://github.com/joonro/ConEmu-Color-Themes)
 3. Install [PsGet](http://psget.net/)
