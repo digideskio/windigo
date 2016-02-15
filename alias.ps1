@@ -50,16 +50,24 @@ Set-Alias glo git-pull-origin
 function git-push-origin { git push origin }
 Set-Alias gpo git-push-origin
 
+function git-diff { git diff }
+Set-Alias gd git-diff
+
+function git-log { git log }
+Set-Alias glog git-log
+
+function git-log-brief { git log --graph --pretty=oneline --abbrev-commit }
+Set-Alias glogb git-log-brief
+
+function git-log-verbose { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative }
+Set-Alias glogv git-log-verbose
+
+function git-remote-prune-origin { git remote prune origin }
+Set-Alias grpo git-remote-prune-origin
+
+function git-config-credential-helper { git config --global credential.helper wincred }
+Set-Alias gcch git-config-credential-helper
 
 
-# alias gcp="git cherry-pick"
-
-# alias gd="git diff"
-
-# alias glog="git log --graph --pretty=oneline --abbrev-commit"
-# alias glogv="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-# alias ggs="glogv --stat"
-
-# alias grpo="git remote prune origin"
 
 # alias gcch="git config credential.helper 'cache --timeout=1800'"
