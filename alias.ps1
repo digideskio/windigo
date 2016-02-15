@@ -44,21 +44,13 @@ function git-merge { git merge $args }
 Remove-Item alias:gm -force
 Set-Alias gm git-merge
 
+function git-pull-origin { git pull origin }
+Set-Alias glo git-pull-origin
+
+function git-push-origin { git push origin }
+Set-Alias gpo git-push-origin
 
 
-
-
-
-# alias gm="git merge"
-
-# alias gl="git pull"
-# alias glo="git pull origin"
-# alias glr="git pull --rebase"
-
-# alias gfr="git fetch && git rebase"
-
-# alias gp="git push"
-# alias gpo="git push origin"
 
 # alias gcp="git cherry-pick"
 
