@@ -19,7 +19,7 @@
 ### git
 
 1. Install git, making sure it's available from the Command Prompt/added to the PATH
-2. [Fix the weird terminal error](http://stackoverflow.com/questions/7949956/why-does-git-diff-on-windows-warn-that-the-terminal-is-not-fully-functional) on `git diff`
+2. (optional) [Fix the weird terminal error](http://stackoverflow.com/questions/7949956/why-does-git-diff-on-windows-warn-that-the-terminal-is-not-fully-functional) on `git diff`
 
 ### posh-git
 
