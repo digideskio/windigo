@@ -1,4 +1,6 @@
-# windows-dev-environment
+# windigo
+
+##### Windows dev environments REALLY don't have to suck.
 
 ### terminal (Powershell)
 
