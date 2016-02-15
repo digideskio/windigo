@@ -31,13 +31,17 @@ features.
 Following [this handy tip from StackOverflow](http://stackoverflow.com/a/23607803), open the source of posh-git
 and find the `TabExpansion` function, adding these lines to the top:
 
-```
-# aliases that have some form of tab autocomplete functionality
-# NOTE: ADDED POST-INSTALL BY USER
-$line = $line -replace '^gco ', 'git checkout '
-$line = $line -replace '^gbd ', 'git branch '
-$line = $line -replace '^gm ', 'git merge '
-# end aliases
+```powershell
+function TabExpansion($line, $lastWord) {
+  # aliases that have some form of tab autocomplete functionality
+  # NOTE: ADDED POST-INSTALL BY USER
+  $line = $line -replace '^gco ', 'git checkout '
+  $line = $line -replace '^gbd ', 'git branch '
+  $line = $line -replace '^gm ', 'git merge '
+  # end aliases
+
+  # rest of the function...
+}
 ```
 
 This will allow us to use tab autocompletion for branch names on the relevant git commands.
