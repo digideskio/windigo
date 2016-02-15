@@ -21,6 +21,25 @@
 1. Install git, making sure it's available from the Command Prompt/added to the PATH
 2. [Fix the weird terminal error](http://stackoverflow.com/questions/7949956/why-does-git-diff-on-windows-warn-that-the-terminal-is-not-fully-functional) on `git diff`
 
+### posh-git
+
+posh-git is great, but it'd be nice if we could use our own personal git aliases with its tab autocompletion
+features.
+
+Following [this handy tip from StackOverflow](http://stackoverflow.com/a/23607803), open the source of posh-git
+and find the `TabExpansion` function, adding these lines to the top:
+
+```
+# aliases that have some form of tab autocomplete functionality
+# NOTE: ADDED POST-INSTALL BY USER
+$line = $line -replace '^gco ', 'git checkout '
+$line = $line -replace '^gbd ', 'git branch '
+$line = $line -replace '^gm ', 'git merge '
+# end aliases
+```
+
+This will allow us to use tab autocompletion for branch names on the relevant git commands.
+
 ### ssh
 
 Just make sure `ssh` from the git install is added to the PATH, just like `git` is!
