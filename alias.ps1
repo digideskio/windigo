@@ -1,54 +1,53 @@
 # filesystem aliases
 
 function move-up { cd .. }
-sal .. move-up
+Set-Alias .. move-up
 
 function move-home { cd ~ }
-sal ~ move-home
+Set-Alias ~ move-home
 
-sal l ls
+Set-Alias l ls
 
 # git aliases
 
 function git-branch { git branch }
-sal gb git-branch
+Set-Alias gb git-branch
 
 function git-branch-all { git branch -a }
-sal gba git-branch-all
+Set-Alias gba git-branch-all
 
 function git-branch-delete { git branch -D $args }
-sal gbd git-branch-delete
+Set-Alias gbd git-branch-delete
 
 function git-checkout { git checkout $args }
-sal gco git-checkout
+Set-Alias gco git-checkout
 
 function git-checkout-branch { git checkout -b $args }
-sal gcob git-checkout-branch
+Set-Alias gcob git-checkout-branch
 
 function git-status { git status }
-sal gs git-status
+Set-Alias gs git-status
 
 function git-clone { git clone $args }
-sal gcl git-clone
+Set-Alias gcl git-clone
 
 function git-add-all { git add -A }
-sal gaa git-add-all
+Set-Alias gaa git-add-all
 
 function git-commit { git commit -v -m $args }
 # remove existing PS alias for Get-Command
 Remove-Item alias:gcm -force
-sal gcm git-commit
+Set-Alias gcm git-commit
+
+function git-merge { git merge $args }
+# remove existing PS alias for Get-Member
+Remove-Item alias:gm -force
+Set-Alias gm git-merge
 
 
 
 
 
-# alias gco="git checkout"
-# alias gcob="git checkout -b"
-
-# alias gb="git branch"
-# alias gba="git branch -a"
-# alias gbd="git branch -D"
 
 # alias gm="git merge"
 
