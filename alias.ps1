@@ -68,6 +68,9 @@ Set-Alias grpo git-remote-prune-origin
 function git-config-credential-helper { git config --global credential.helper wincred }
 Set-Alias gcch git-config-credential-helper
 
+function git-config-credential-helper-unset { git config --global --unset credential.helper }
+Set-Alias gcchu git-config-credential-helper-unset
+
 
 
 # alias gcch="git config credential.helper 'cache --timeout=1800'"
