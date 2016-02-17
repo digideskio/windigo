@@ -1,12 +1,24 @@
 # filesystem aliases
 
-function move-up { cd .. }
-Set-Alias .. move-up
+function cd-up { cd .. }
+Set-Alias .. cd-up
 
-function move-home { cd ~ }
-Set-Alias ~ move-home
+function cd-home { cd ~ }
+Set-Alias ~ cd-home
 
 Set-Alias l ls
+
+function ls-all { Get-ChildItem -Force }
+Set-Alias la ls-all
+
+function ls-directories { Get-ChildItem -Directory }
+Set-Alias lsd ls-directories
+
+function ls-files { Get-ChildItem -File }
+Set-Alias lsf ls-files
+
+function ls-hidden { Get-ChildItem -Hidden }
+Set-Alias lsh ls-hidden
 
 # git aliases
 
