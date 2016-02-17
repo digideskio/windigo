@@ -20,6 +20,14 @@ Set-Alias lsf ls-files
 function ls-hidden { Get-ChildItem -Hidden }
 Set-Alias lsh ls-hidden
 
+# powershell history aliases
+
+function ps-get-history { Get-History }
+Set-Alias pgh ps-get-history
+
+function ps-invoke-history { Invoke-History $args[0] }
+Set-Alias pih ps-invoke-history
+
 # git aliases
 
 function git-add-all { git add -A }
